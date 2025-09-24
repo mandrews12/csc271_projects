@@ -1,0 +1,52 @@
+<!-- Meghan Andrews - 9/24/2025 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Your Favorite Dish</title> 
+</head>
+<body>
+    <h1>Fill out the form to submit your favorite dish</h1>
+    
+    <!-- When the form is submitted, it redirects back to index.html -->
+    <form action="index.html">
+        
+        <!-- Text input fields for the user’s recipe name -->
+        <label for="rname">Enter Recipie Name<br>
+        <input type="text" id="rname"><br>
+        <br>
+
+        <!-- A text area for ingredients and instructions -->
+        <label for="ing">Enter Ingredients and Instructions<br>
+        <textarea id="ing" rows="4" cols="20"></textarea><br>
+        <br>
+        
+        <!-- Radio buttons for difficulty level (Easy, Medium, Hard) -->
+        <label for="rating">Enter the level of difficulty<br>
+        <input type="radio" id="rating" name="rating" value="easy">
+        <label for="rating">easy</label><br>
+        <input type="radio" id="rating" name="rating" value="medium">
+        <label for="rating">medium</label><br>
+        <input type="radio" id="rating" name="rating" value="hard">
+        <label for="rating">hard</label><br>
+        <br>
+
+        <!-- Checkboxes for dietary preferences (Vegetarian, Vegan, etc.) -->
+        <label for="diet">Enter dietary prefrences<br>
+        <input type="checkbox" id="diet" name="prfe1" value="Vegetarian">
+        <label for="pref1"> Vegetarian</label><br>
+        <input type="checkbox" id="diet" name="prfe2" value="Vegan">
+        <label for="pref2"> Vegan</label><br>
+        <input type="checkbox" id="diet" name="prfe3" value="Dairy Free">
+        <label for="pref3"> Dairy Free</label><br>
+        <input type="checkbox" id="diet" name="prfe4" value="Gluten Free">
+        <label for="pref4"> Gluten Free</label><br>
+        <br>
+        
+        <!-- A submit button -->
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
