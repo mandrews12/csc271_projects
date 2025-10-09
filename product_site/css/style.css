@@ -61,7 +61,7 @@ footer {
 
 .header {
   overflow: hidden;
-  padding: 15px 20px;
+  padding: 0px 20px;
   background: #E8E2D4;
   display: flex;
   align-items: center;
@@ -69,7 +69,7 @@ footer {
 }
 
 #logo {
-  margin-left: 5px;
+  margin-left: 0px;
 }
 
 a {
@@ -79,12 +79,16 @@ a {
     padding: 12px
 }
 
-a:hover {
-    color: rgb(190, 127, 246);
+.header a:hover {
+    background-color: #D2B48C;
+    color: #2F3D1A;
+    box-shadow: inset 0px 2px 2px black ;
 }
 
-a.active {
-    color: rgb(93, 52, 51);
+.header a.active {
+    background-color: #4A5D23;
+    color: #F5F3E7;
+    box-shadow: inset 0 2px 2px black;
 }
 
 .header-right {
@@ -96,7 +100,7 @@ a:visited {
   color: green;
 }
 
-#ital{
+.ital{
     text-align: center; 
     font-style: italic; 
     color: #5D4E37;
