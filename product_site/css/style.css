@@ -82,18 +82,11 @@ a {
 .header a:hover {
     background-color: #D2B48C;
     color: #2F3D1A;
-    box-shadow: inset 0px 2px 2px black ;
 }
 
 .header a.active {
     background-color: #4A5D23;
     color: #F5F3E7;
-    box-shadow: inset 0 2px 2px black;
-}
-
-.header-right {
-    float: right;
-    margin-top: 12;
 }
 
 a:visited {
