@@ -5,7 +5,6 @@ This is the styles sheet for Plantly. It follows a woodsy color schema of greens
 All pages in website should link to this sheet.
 */
 
-/* Main heading styling */
 h1 {
     font: bold georgia, serif;
     color: #4A5D23; 
@@ -13,7 +12,6 @@ h1 {
     margin: auto;
 }
 
-/* Tables styling */
 table {
     border-spacing: 15px;
     margin: 20px 0;
@@ -28,13 +26,11 @@ table td {
     box-shadow: 0 4px 8px rgba(139, 125, 107, 0.2);
 }
 
-/* Sub headings */
 h3, h2 {
     font: bold georgia, serif;
     color: #5D4E37;
 }
 
-/* Form styling */
 form {
     background: #F0EDD4; 
     border: 2px solid #9CAF88;
@@ -48,23 +44,12 @@ form h3 {
     margin-bottom: 20px;
 }
 
-/* Labels */
 label {
     font-weight: bold;
     color: #5D4E37;
     font-family: georgia, serif;
 }
 
-/* Navigation  */
-nav {
-    background: #E8E2D4; 
-    padding: 15px;
-    text-align: center;
-    margin: auto;
-}
-
-
-/* Footer styling */
 footer {
     background: #8B7D6B;
     color: #F5F3E7;
@@ -74,28 +59,73 @@ footer {
     margin-top: 30px;
 }
 
-/* link */
+.header {
+  overflow: hidden;
+  padding: 0px 20px;
+  background: #E8E2D4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo {
+  margin-left: 0px;
+}
+
 a {
     color: #4A5D23; 
+    font-size: 18px;
     font-weight: bold;
+    padding: 12px
 }
 
-/* unvisited link */
-a:link {
-  color: #4A5D23; 
+.header a:hover {
+    background-color: #D2B48C;
+    color: #2F3D1A;
 }
 
-/* visited link */
+.header a.active {
+    background-color: #4A5D23;
+    color: #F5F3E7;
+}
+
 a:visited {
   color: green;
 }
 
-/* mouse over link */
-a:hover {
-  color: rgb(190, 127, 246);
+.ital{
+    text-align: center; 
+    font-style: italic; 
+    color: #5D4E37;
 }
 
-/* selected link */
-a:active {
-  color: rgb(93, 52, 51);
+.card {
+  background: #f3f2f0;;
+  padding: 20px;
+  margin-top: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+  .link{
+   float: none;
+   display: block;
+   text-align: left; 
+  }
+
+  .header {
+    float: none;
+  }
+
+  .card{
+    font-size: 30px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+}
+
+
+
