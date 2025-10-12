@@ -5,37 +5,19 @@ This is the styles sheet for Plantly. It follows a woodsy color schema of greens
 All pages in website should link to this sheet.
 */
 
+/* -- Typography -- */
 h1 {
     font: bold georgia, serif;
     color: #4A5D23; 
     text-align: center;
     margin: auto;
+    padding-top: 20px;
 }
 
-table {
-    border-spacing: 15px;
-    margin: 20px 0;
-}
-
-table td {
-    background: #F5F3E7; 
-    border: 2px solid #A0916C; 
-    padding: 20px;
-    border-radius: 10px;
-    vertical-align: middle;
-    box-shadow: 0 4px 8px rgba(139, 125, 107, 0.2);
-}
 
 h3, h2 {
     font: bold georgia, serif;
     color: #5D4E37;
-}
-
-form {
-    background: #F0EDD4; 
-    border: 2px solid #9CAF88;
-    padding: 25px;
-    margin: 20px 0;
 }
 
 form h3 {
@@ -44,34 +26,19 @@ form h3 {
     margin-bottom: 20px;
 }
 
-label {
-    font-weight: bold;
-    color: #5D4E37;
-    font-family: georgia, serif;
+.ital {
+  font-style: italic;
+  text-align: center;
+  color: #5D4E37;
 }
 
-footer {
-    background: #8B7D6B;
-    color: #F5F3E7;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    margin-top: 30px;
+img{
+  float: none;
+  margin: 5px;
 }
 
-.header {
-  overflow: hidden;
-  padding: 0px 20px;
-  background: #E8E2D4;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
-#logo {
-  margin-left: 0px;
-}
-
+/* -- Navigation & Links -- */
 a {
     color: #4A5D23; 
     font-size: 18px;
@@ -93,18 +60,66 @@ a:visited {
   color: green;
 }
 
-.ital{
-    text-align: center; 
-    font-style: italic; 
-    color: #5D4E37;
+/* -- Layout Components -- */
+.header {
+  overflow: hidden;
+  padding: 0px 10px;
+  background: #E8E2D4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .card {
   background: #f3f2f0;;
-  padding: 20px;
+  padding: 10px 10px;
   margin-top: 20px;
+  align-content: center;
 }
 
+footer {
+    background: #8B7D6B;
+    color: #F5F3E7;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* -- Tables -- */
+table {
+    border-spacing: 15px;
+    margin: 20px 0;
+}
+
+table td {
+    background: #F5F3E7; 
+    border: 2px solid #A0916C; 
+    padding: 20px;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+
+/* -- Forms & Inputs -- */
+form {
+    background: #F0EDD4; 
+    border: 2px solid #9CAF88;
+    padding: 25px;
+    margin: 20px 0;
+}
+
+label {
+    font-weight: bold;
+    color: #5D4E37;
+    font-family: georgia, serif;
+}
+
+/* -- Unique Ids -- */
+#logo {
+  margin-left: 0px;
+}
+
+/* -- Responsive Design -- */
 @media only screen and (max-width: 600px) {
   .link{
    float: none;
@@ -121,11 +136,8 @@ a:visited {
   }
 
   img {
-    max-width: 100%;
+    max-width: 10%;
     height: auto;
   }
   
 }
-
-
-
