@@ -7,23 +7,25 @@ All pages in website should link to this sheet.
 
 /* -- Typography -- */
 h1 {
-    font: bold georgia, serif;
-    color: #4A5D23; 
-    text-align: center;
-    margin: auto;
-    padding-top: 20px;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  color: #4A5D23; 
+  text-align: center;
+  margin: auto;
+  padding-top: 20px;
 }
 
 
 h3, h2 {
-    font: bold georgia, serif;
-    color: #5D4E37;
+  font-family: Georgia, serif;
+  font-weight: bold;
+  color: #5D4E37;
 }
 
 form h3 {
-    color: #4A5D23; 
-    border-bottom: 2px solid #8B7D6B;
-    margin-bottom: 20px;
+  color: #4A5D23; 
+  border-bottom: 2px solid #8B7D6B;
+  margin-bottom: 20px;
 }
 
 .ital {
@@ -40,20 +42,20 @@ img{
 
 /* -- Navigation & Links -- */
 a {
-    color: #4A5D23; 
-    font-size: 18px;
-    font-weight: bold;
-    padding: 12px
+  color: #4A5D23; 
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px
 }
 
 .header a:hover {
-    background-color: #D2B48C;
-    color: #2F3D1A;
+  background-color: #D2B48C;
+  color: #2F3D1A;
 }
 
 .header a.active {
-    background-color: #4A5D23;
-    color: #F5F3E7;
+  background-color: #4A5D23;
+  color: #F5F3E7;
 }
 
 a:visited {
@@ -71,52 +73,63 @@ a:visited {
 }
 
 .card {
-  background: #f3f2f0;;
+  background: #f3f2f0;
   padding: 10px 10px;
   margin-top: 20px;
   align-content: center;
 }
 
 footer {
-    background: #8B7D6B;
-    color: #F5F3E7;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    margin-top: 30px;
+  background: #8B7D6B;
+  color: #F5F3E7;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 30px;
 }
 
 /* -- Tables -- */
 table {
-    border-spacing: 15px;
-    margin: 20px 0;
+  border-spacing: 15px;
+  margin: 20px 0;
 }
 
 table td {
-    background: #F5F3E7; 
-    border: 2px solid #A0916C; 
-    padding: 20px;
-    border-radius: 10px;
-    vertical-align: middle;
+  background: #F5F3E7; 
+  border: 2px solid #A0916C; 
+  padding: 20px;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+
+table img{
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  height: auto; 
 }
 
 /* -- Forms & Inputs -- */
 form {
-    background: #F0EDD4; 
-    border: 2px solid #9CAF88;
-    padding: 25px;
-    margin: 20px 0;
+  background: #F0EDD4; 
+  border: 2px solid #9CAF88;
+  padding: 25px;
+  margin: 20px 0;
 }
 
 label {
-    font-weight: bold;
-    color: #5D4E37;
-    font-family: georgia, serif;
+  font-weight: bold;
+  color: #5D4E37;
+  font-family: georgia, serif;
 }
 
 /* -- Unique Ids -- */
 #logo {
   margin-left: 0px;
+}
+
+#journal-nav{
+  background: #f3f2f0;
 }
 
 /* -- Responsive Design -- */
@@ -132,12 +145,28 @@ label {
   }
 
   .card{
-    font-size: 30px;
+    font-size: 20px;
   }
 
   img {
     max-width: 10%;
     height: auto;
+  }
+
+  table img {
+    max-width: 90%;
+    margin: 15px auto;
+  }
+
+  table {
+    border-spacing: 5px;
+  }
+  
+  table td {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
   }
   
 }
