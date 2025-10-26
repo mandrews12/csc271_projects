@@ -7,63 +7,101 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Sproutly Journal</title> 
+    <meta name="description" content="Sproutly Garden Journal - Log and track your gardening progress with notes, photos, and year-over-year tracking to improve your garden success.">
+    <meta property="og:title" content="Sproutly Garden Journal - Log & Track Your Garden Progress">
+    <meta property="og:description" content="Keep garden notes, create a photo log, and track year-over-year progress with Sproutly's comprehensive garden journal.">
+    <meta property="og:image" content="documentation/logo.png">
+    <meta property="og:url" content="https://sproutly.com/garden-journal.html">
+    <meta property="og:type" content="website">
+
+    <title>Sproutly Garden Journal | Track & Log Your Garden Progress</title> 
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8XQPVJE02Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-8XQPVJE02Y');
+    </script>
 </head>
 
 <body>
     <!-- Header with Logo and Navigation -->
     <div class="header">
-        <img src="documentation/logo.png" alt="Plantly logo" height="70">
+        <img src="documentation/logo.png" alt="Sproutly Garden Journal - Track your gardening progress" height="70" id="logo">
         <nav>
-            <a href="home.html" >Home</a>
+            <a href="home.html">Home</a>
             <a href="features.html">Features</a>
-            <a href="journal.html" class="active">Journal</a>
-            <a href="dashboard.html">Dashboard</a>
+            <a href="journal.html" class="active">Garden Journal</a>
+            <a href="dashboard.html">Garden Tracker</a>
             <a href="Profile.html">Profile</a>
         </nav>
     </div>
 
     <div class = "card">
-        <h1> Garden Journal</h1>
-        <p class="ital">Add all your notes and observations to your journal to keep track of your progress and look back on in the coming years. You can view photos, search by plant, season, or keyword.</p>
+        <h1>Sproutly Garden Journal - Log & Track Your Progress</h1>
+        <p class="ital">Add all your garden notes and observations to your digital garden journal to keep track of your progress and create a year-over-year tracker for your gardening success. Maintain a comprehensive garden photo log to document your journey.</p>
     
 
     <!-- Navigation - links to current and future pages-->
     <nav class="header" id="journal-nav">
-        <a>All Entries</a> |
-        <a>Photos</a> |
-        <a>Plants</a> |
-        <a>Seasons</a> |
-        <a>Search </a>
+        <a href="#entries">Journal Entries</a> |
+        <a href="#photo-log">Garden Photo Log</a> |
+        <a href="#plant-notes">Plant Notes</a> |
+        <a href="#seasonal-tracker">Year-Over-Year Tracker</a> |
+        <a href="#search">Search Journal</a>
     </nav>
 
     </div>
 
     <div class = "card">
+        <h2>Recent Garden Journal Entries</h2>
+        <p>Browse your latest garden notes below or use the navigation to explore your complete garden journal by category.</p>
+        
         <table>
             <tr>
                 <td>
                     <p><strong>Sept 29, 2025</strong></p>
-                    <p>Tomatoes </p>
-                    <p> Needs to be watered every 3 days, wait till top soil is dry before watering again. </p>
+                    <p>Tomatoes - Garden Notes</p>
+                    <p>Needs to be watered every 3 days, wait till top soil is dry before watering again. Adding this to my year-over-year tracker to compare with next season's growth patterns.</p>
                 </td>
             </tr>
             <tr>
                 <td>
                     <p><strong>Sept 19, 2025</strong></p>
-                    <p>Squash </p>
-                    <p> Needs to be watered every 2 days, they will get wilty if left without water for too long. </p>
+                    <p>Squash - Garden Journal</p>
+                    <p>Needs to be watered every 2 days, they will get wilty if left without water for too long. Recording in my garden notes for future reference.</p>
                 </td>
             </tr>
             <tr>
                 <td>
                     <p><strong>Oct 11, 2025</strong></p>
-                    <p>All Plants </p>
-                    <p> If there is a frost coming, pick all vegetables or cover with blanket to keep from freezing. </p>
+                    <p>All Plants - Seasonal Notes</p>
+                    <p>If there is a frost coming, pick all vegetables or cover with blanket to keep from freezing. Important for my year-over-year tracker to remember seasonal transitions.</p>
                 </td>
             </tr>
         </table>
+    </div>
+    
+    <div class="card" id="photo-log">
+        <h2>Garden Photo Log</h2>
+        <p>Your visual garden journal helps you track plant growth and garden changes throughout the seasons. Add photos with detailed garden notes to build your comprehensive garden documentation.</p>
+        <p class="ital">Upload new photos to your garden photo log to visually track your progress.</p>
+    </div>
+
+    <div class="card" id="seasonal-tracker">
+        <h2>Year-Over-Year Garden Tracker</h2>
+        <p>Compare your garden notes across multiple growing seasons to improve your gardening success. Our year-over-year tracker helps you identify patterns and make better gardening decisions.</p>
+        <p>Use your garden journal data to:</p>
+        <ul>
+            <li>Compare plant performance across seasons</li>
+            <li>Track weather patterns and their effects</li>
+            <li>Document successful growing techniques</li>
+            <li>Create a personalized gardening calendar</li>
+        </ul>
     </div>
 
     <div class="card">

@@ -6,34 +6,50 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Sproutly Features</title> 
+    <meta name="description" content="Explore Sproutly's gardening app features including smart garden tools and our all-in-one garden planner to simplify your gardening experience.">
+    <meta property="og:title" content="Sproutly - Comprehensive Gardening App Features & Smart Garden Tools">
+    <meta property="og:description" content="Discover our all-in-one garden planner and smart gardening tools that make garden planning and maintenance simple for gardeners of all levels.">
+    <meta property="og:image" content="documentation/logo.png">
+    <meta property="og:url" content="https://sproutly.com/garden-features.html">
+    <meta property="og:type" content="website">
+    <title>Sproutly Gardening App Features | Smart Garden Tools & All-in-One Planner</title> 
     <link rel="stylesheet" href="css/style.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8XQPVJE02Y"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-8XQPVJE02Y');
+</script>
 </head>
 
 <body>
 
     <!-- Header with Logo and Navigation -->
     <div class="header">
-        <img src="documentation/logo.png" alt="Plantly logo" height="70">
+        <img src="documentation/logo.png" alt="Sproutly smart garden tools and planner app" height="70" id="logo">
         <nav>
-            <a href="home.html" >Home</a>
-            <a href="features.html" class="active">Features</a>
-            <a href="journal.html">Journal</a>
-            <a href="dashboard.html">Dashboard</a>
+            <a href="home.html">Home</a>
+            <a href="features.html" class="active">Gardening App Features</a>
+            <a href="journal.html">Garden Journal</a>
+            <a href="dashboard.html">Garden Tracker</a>
             <a href="Profile.html">Profile</a>
         </nav>
     </div>
 
     <!-- Features Comparison Table -->
     <div class="card">
-        <h1>Features Overview</h1>
+        <h1>Smart Gardening App Features Overview</h1>
 
-        <p class="ital">Sproutly offers a range of features designed to help you with your gardening journey. From personalized planning tools to care guidance, our app empowers you to grow your garden with confidence.</p>
+        <p class="ital">Sproutly offers a comprehensive suite of gardening app features designed to transform your gardening experience. From our all-in-one garden planner to intelligent smart garden tools, our app empowers you to grow your garden with confidence and efficiency.</p>
+        
     </div>
 
     <div class="card">
         <!-- Row 1: Features 1 and 2 -->
-        <table>
+        <table id="garden-planner-features">
             <tr>
                 <td>
                     <h3>Feature 1: Drag-and-Drop Garden Builder</h3>
@@ -82,7 +98,7 @@
 
 
         <!-- Row 4: Feature 7  -->
-        <table>
+        <table id="gardener-profile">
             <tr>
                 <td>
                     <h3>Feature 7: User Profile & Progress Tracking</h3>
@@ -90,21 +106,25 @@
                 </td>
             </tr>
         </table>
+        
+        <h2>Why Choose Our All-in-One Garden Planner?</h2>
+        <p>Unlike standalone garden planning tools, our gardening app features a complete ecosystem of smart garden tools that work together seamlessly. From initial design to ongoing maintenance, Sproutly provides everything you need in one integrated platform.</p>
     </div>
 
 
-    <div class="card">
-        <h3> Submit Future Feature Suggestion</h3>
+    <div class="card" id="feature-suggestion">
+        <h3>Suggest New Smart Garden Tools</h3>
+        <p>We're continuously improving our gardening app features. Share your ideas for new smart garden tools or enhancements to our all-in-one garden planner!</p>
         <form>
             <!-- Gather user information -->
             <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" maxlength="50"><br><br>
+            <input type="text" id="fname" name="fname" maxlength="50" placeholder="Your first name"><br><br>
 
             <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" maxlength="50"><br><br>
+            <input type="text" id="lname" name="lname" maxlength="50" placeholder="Your last name"><br><br>
 
             <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email" maxlength="50" required><br><br>
+            <input type="email" id="email" name="email" maxlength="50" required placeholder="your@email.com"><br><br>
 
             <!-- Radio buttons for gardening level -->
             <label for="rating">Enter your gardening experience:<br>
@@ -119,20 +139,20 @@
             <br>
 
             <!-- A text area for feature request -->
-            <label for="feature">Enter feature idea<br>
-            <textarea id="feature" rows="4" cols="20" maxlength="1024" required></textarea><br>
+            <label for="feature">Describe your gardening app feature idea:<br>
+            <textarea id="feature" rows="4" cols="20" maxlength="1024" required placeholder="I'd like to see a smart garden tool that..."></textarea><br>
             <br>
 
             <!-- A submit button -->
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit Feature Suggestion">
         </form>
     </div>
 
     <div class="card">
         <!-- Footer Section - copyright and contact information -->
         <footer>
-            <p> Forum -  About Us - <a href="mailto:ma17328ma@uri.edu"> Contact Us</a> </p>
-            <p><em>2025 Sproutly. All rights reserved.</em></p>
+            <p><a href="#garden-planner-features">All-in-One Garden Planner</a> - <a href="#gardening-knowledge-tools">Smart Garden Tools</a> - <a href="#garden-management-tools">Gardening App Features</a> - <a href="mailto:ma17328ma@uri.edu">Contact Our Garden Tech Team</a></p>
+            <p><em>2025 Sproutly - Smart Garden Tools & All-in-One Garden Planner. All rights reserved.</em></p>
         </footer>
     </div>
 

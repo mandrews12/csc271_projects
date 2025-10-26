@@ -15,7 +15,6 @@ h1 {
   padding-top: 20px;
 }
 
-
 h3, h2 {
   font-family: Georgia, serif;
   font-weight: bold;
@@ -39,6 +38,16 @@ img{
   margin: 5px;
 }
 
+li {
+  margin: 10px 0;
+  color: #5D4E37;
+}
+
+p {
+  line-height: 1.6;
+  color: #5D4E37;
+}
+
 
 /* -- Navigation & Links -- */
 a {
@@ -51,11 +60,14 @@ a {
 .header a:hover {
   background-color: #D2B48C;
   color: #2F3D1A;
+  border-radius: 5px;
+
 }
 
 .header a.active {
   background-color: #4A5D23;
   color: #F5F3E7;
+  border-radius: 5px;
 }
 
 a:visited {
@@ -80,12 +92,52 @@ a:visited {
 }
 
 footer {
-  background: #8B7D6B;
+  background: #473e33;
   color: #F5F3E7;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
   margin-top: 30px;
+  font-size: 1.5em;
+}
+
+footer a {
+  color: #F5F3E7;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+footer a:hover {
+  color: #D2B48C;
+}
+
+footer p {
+  color: #F5F3E7;
+}
+
+.stats-grid {
+  display: flex;
+  margin: 5px;
+  padding: 10px;
+  gap: 10px;
+}
+
+.stat-item {
+  background: #4A5D23;
+  color: #F5F3E7;
+  flex: 1;
+  padding: 15px;
+  border: 2px solid #A0916C;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.stat-item h3 {
+  color: #F5F3E7;
+}
+
+.stat-item p {
+  color: #F5F3E7;
 }
 
 /* -- Tables -- */
