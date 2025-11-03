@@ -34,6 +34,8 @@
         <img src="documentation/logo.png" alt="Sproutly Garden Journal - Track your gardening progress" height="70" id="logo">
         <nav>
             <a href="home.html">Home</a>
+            <a href="plant_database.html">Plant Database</a>
+            <a href="todo.html">Todo</a>
             <a href="features.html">Features</a>
             <a href="journal.html" class="active">Journal</a>
             <a href="Profile.html">Profile</a>
@@ -58,36 +60,46 @@
 
     <div class = "card">
         <h2>Recent Garden Journal Entries</h2>
+        <div class="filter">
+            <!-- Filter label and dropdown to filter reviews by rating -->
+            <label for="search">Search for specific entry:</label>
+            <input id="search" type="text" placeholder="Search.." name="search" required>
+            <button id="submit-button" type="submit">Submit </button>
+        </div>
+
         <p>Browse your latest garden notes below or use the navigation to explore your complete garden journal by category.</p>
         
         <table>
             <tr>
-                <td>
+                <td class="entry">
                     <p><strong>Sept 29, 2025</strong></p>
                     <p>Tomatoes - Garden Notes</p>
                     <p>Needs to be watered every 3 days, wait till top soil is dry before watering again. Adding this to my year-over-year tracker to compare with next season's growth patterns.</p>
                 </td>
             </tr>
             <tr>
-                <td>
+                <td class="entry">
                     <p><strong>Sept 19, 2025</strong></p>
                     <p>Squash - Garden Journal</p>
                     <p>Needs to be watered every 2 days, they will get wilty if left without water for too long. Recording in my garden notes for future reference.</p>
                 </td>
             </tr>
             <tr>
-                <td>
+                <td class="entry">
                     <p><strong>Oct 11, 2025</strong></p>
                     <p>All Plants - Seasonal Notes</p>
                     <p>If there is a frost coming, pick all vegetables or cover with blanket to keep from freezing. Important for my year-over-year tracker to remember seasonal transitions.</p>
                 </td>
             </tr>
         </table>
+
+        <button>Add New Entry</button>
     </div>
     
     <div class="card" id="photo-log">
         <h2>Garden Photo Log</h2>
         <p>Your visual garden journal helps you track plant growth and garden changes throughout the seasons. Add photos with detailed garden notes to build your comprehensive garden documentation.</p>
+        <button>Add New Photo</button>
         <p class="ital">Upload new photos to your garden photo log to visually track your progress.</p>
     </div>
 
@@ -110,5 +122,7 @@
             <p><em>2025 Sproutly. All rights reserved.</em></p>
         </footer>
     </div>
-  
+    
+    <script src="js/search.js"></script>
 </body>
+</html>

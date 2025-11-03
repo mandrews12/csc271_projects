@@ -4,64 +4,87 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Explore Sproutly's gardening app features including smart garden tools and our all-in-one garden planner to simplify your gardening experience.">
-    <meta property="og:title" content="Sproutly - Comprehensive Gardening App Features & Smart Garden Tools">
-    <meta property="og:description" content="Discover our all-in-one garden planner and smart gardening tools that make garden planning and maintenance simple for gardeners of all levels.">
-    <meta property="og:image" content="documentation/logo.png">
-    <meta property="og:url" content="https://sproutly.com/garden-features.html">
-    <meta property="og:type" content="website">
-    <title>Sproutly Gardening App Features | Smart Garden Tools & All-in-One Planner</title> 
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8XQPVJE02Y"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Profile page to customize your gardening experience with Sproutly">
+        <meta property="og:title" content="Sproutly - Comprehensive Gardening Profile">
+        <meta property="og:description" content="Profile page to customize your gardening experience with Sproutly">
+        <meta property="og:image" content="documentation/logo.png">
+        <meta property="og:url" content="https://sproutly.com/profile.html">
+        <meta property="og:type" content="website">
 
-    gtag('config', 'G-8XQPVJE02Y');
-</script>
-</head>
+        <title>Sproutly Gardening App Profile | Customize Your Experience</title> 
+        <link rel="stylesheet" href="css/style.css">
+        
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8XQPVJE02Y"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
 
-<body>
+            gtag('config', 'G-8XQPVJE02Y');
+        </script>
+    </head>
 
-    <!-- Header with Logo and Navigation -->
-    <div class="header">
-        <img src="documentation/logo.png" alt="Sproutly smart garden tools and planner app" height="70" id="logo">
-        <nav>
-            <a href="home.html">Home</a>
-            <a href="features.html" >Features</a>
-            <a href="journal.html">Journal</a>
-            <a href="Profile.html"class="active">Profile</a>
-        </nav>
-    </div>=
+    <body>
 
-    <div class="card">
-        <h1 id="user">Welcome </h1>
+        <!-- Header with Logo and Navigation -->
+        <div class="header">
+            <img src="documentation/logo.png" alt="Sproutly smart garden tools and planner app" height="70" id="logo">
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="plant_database.html">Plant Database</a>
+                <a href="todo.html">Todo</a>
+                <a href="features.html" >Features</a>
+                <a href="journal.html">Journal</a>
+                <a href="Profile.html"class="active">Profile</a>
+            </nav>
+        </div>
 
-        <p id="frost-date">Your frost date is coming soon in only </p>
-    </div>
+        <div class="card">
+            <h1 id="user">Welcome </h1>
 
-    <div class="card" id="username-card">
-        <h2>Enter Your Username</h2>
-            <form id="usernameForm">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-                <button type="submit">Save</button>
-            </form>
-    </div>
+            <p class="ital">Your predicated last frost is coming soon in only </p>
+            <p class="ital">mWith a predicted first frost date of </p>
+        </div>
 
+        <div class="card" id="username-card">
+            <h2>Enter Your Username</h2>
+                <form id="usernameForm">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <button type="submit">Save</button>
+                </form>
+        </div>
 
-    <div class="card">
-        <!-- Footer Section - copyright and contact information -->
-         <footer>
-            <p> Forum -  About Us - <a href="mailto:ma17328ma@uri.edu"> Contact Us</a> </p>
-            <p><em>2025 Sproutly. All rights reserved.</em></p>
-        </footer>
-    </div>
+        <div class="card" id="profile-update">
+            <h2>Update Your Profile Information</h2>
+                <form>
+                    <label for="email">Email:</label>
+                    <br>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="location">Location:</label>
+                    <br>
+                    <input type="text" id="location" name="location" required>
+                    <br>
+                    <label for="frostdate">Frost Date:</label>
+                    <br>
+                    <input type="date" id="frostdate" name="frostdate" required>
+                    <br>
+                    <button type="submit">Update Profile</button>
+                </form>
+        </div>
 
-    <script src="js/andrews_script.js"></script>
-</body>
+        <div class="card">
+            <!-- Footer Section - copyright and contact information -->
+            <footer>
+                <p> Forum -  About Us - <a href="mailto:ma17328ma@uri.edu"> Contact Us</a> </p>
+                <p><em>2025 Sproutly. All rights reserved.</em></p>
+            </footer>
+        </div>
+
+        <script src="js/andrews_script.js"></script>
+    </body>
 </html>
