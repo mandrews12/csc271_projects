@@ -48,6 +48,13 @@ p {
   color: #5D4E37;
 }
 
+button {
+  background-color: #4A5D23; 
+  color: #F5F3E7;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
 
 /* -- Navigation & Links -- */
 a {
@@ -138,6 +145,15 @@ footer p {
 
 .stat-item p {
   color: #F5F3E7;
+}
+
+.plant-card {
+  background: #F0EDD4;
+  border: 2px solid #9CAF88;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
+  text-align: center;
 }
 
 /* -- Tables -- */

@@ -2,16 +2,18 @@
 document.addEventListener('DOMContentLoaded', () => {
     
     // calculate days till next frost date
-    var date1 = new Date('2026-05-17');
+    var lastFrostDate = new Date('2026-04-18');
+    var firstFrostDate = new Date('2026-10-21')
     var today = new Date();
-    var timeDifference = date1-today;
+    var timeDifference = lastFrostDate-today;
 
     var date_dif = Math.ceil(timeDifference / (1000 * 3600 * 24));
+    var growingSeason = Math.ceil((firstFrostDate - lastFrostDate) / (1000 * 3600 * 24));
 
     // update html page
     var text = document.getElementsByTagName("p");
     text[0].innerHTML = text[0].innerHTML + " " + date_dif + " days!";
-
+    text[1].innerHTML = text[1].innerHTML + " " + firstFrostDate.getMonth() + "/" +firstFrostDate.getDate() + ", your growing season is about " + growingSeason + " days long";
 
     // update every .card with a new font style to add emphesis
     const cards = document.querySelectorAll('.card');
