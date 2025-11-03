@@ -1,11 +1,15 @@
 /**
  * Meghan Andrews - 10/28/2025
  * This reads in data from a JSON file and dynamically creates html to display the information
+ * The data in data/plants.json was created using chatgpt and I was having an issue with reading the JSON
+ * so I asked chat and it debugged a few lines in my code in the fetch function (flagged with //AI Assisted)
+ * link to chat: https://chatgpt.com/share/6907f9c0-2f10-8001-9bde-b2886f20e540
  */
 
 // fetches my plant data from a json file
 fetch('data/plants.json')
   .then(response => response.json())
+  //AI Assisted with bebugging, see top of file for full documentation
   .then(data => {
     console.log(data.plants);
     buildPlantTable(data.plants);
