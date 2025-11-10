@@ -52,6 +52,26 @@
             <p>Keep track of the plants you intend to grow in your garden by adding them to your gardening basket. This feature helps you organize your plant selections and plan your garden layout effectively.</p>
             <button id="basket-button">View Basket</button>
 
+            <div id="basket-search-bar">
+                <!-- Options to filter plant database -->
+                <input id="search" type="text" placeholder="Search.." name="search" required>
+                <button id="basket-submit-button" type="submit">Submit </button>
+                
+                <!-- Filter label and dropdown to filter plants -->
+                <label for="basket-filter">Sort by:</label>
+                <select id="basket-filter" placeholder="Sort By">
+                    
+                    <!-- Filter options  -->
+                    <option value="All">All</option>
+                    <option value="A-Z">A-Z</option>
+                    <option value="Type">Type </option>
+                    <option value="Difficulty">Difficulty </option>
+                
+                </select>
+
+                <button id="basket-clear-button" type="submit"> Reset </button>
+            </div>
+
             <div id="basket-list">
                 <!-- Plant entries will be dynamically inserted here --> 
             </div>
@@ -61,11 +81,34 @@
         <div class="card">
             <h2>Plant Database</h2>
             <p>Our comprehensive plant database provides detailed information on a wide variety of plants including their ideal growing conditions, care instructions, and compatibility with other plants. Use this resource to research and select the best plants for your garden.</p>
+            
             <button id="database-button">Browse Plants</button>
+            <br>
+
+            <div id="database-search-bar">
+                <!-- Options to filter plant database -->
+                <input id="database-search" type="text" placeholder="Search.." name="search" required>
+                <button id="database-submit-button" type="submit">Submit </button>
+                
+                <!-- Filter label and dropdown to filter plants -->
+                <label for="rating-filter">Sort by:</label>
+                <select id="database-filter" placeholder="Sort By">
+                    
+                    <!-- Filter options  -->
+                    <option value="All">All</option>
+                    <option value="A-Z">A-Z</option>
+                    <option value="Type">Type </option>
+                    <option value="Difficulty">Difficulty </option>
+                
+                </select>
+
+                <button id="database-clear-button" type="submit"> Reset </button>
+            </div>
 
             <div id="plant-list">
                 <!-- Plant entries will be dynamically inserted here --> 
             </div>
+        </div>
 
         <!-- Footer Section - copyright and contact information -->
         <div class="card">

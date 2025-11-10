@@ -15,6 +15,14 @@ var timeDifferenceFF = firstFrostDate - today;
 var date_difLf = Math.ceil(timeDifferenceLF / (1000 * 3600 * 24));
 var date_difFF = Math.ceil(timeDifferenceFF / (1000 * 3600 * 24));
 
+/**
+ * @brief Function that determins what the user can do based on a decision tree using the days till the first and last frost dates
+ * 
+ * @param date_dif_LF - variable storing the number of days till the last frost
+ * @param date_dif_FF - variable storing the number of days till the first frost
+ * 
+ * @returns the string that tells the user what they can do
+ */
 function decisionTree(date_dif_LF,date_dif_FF){
     var todo = "nothing right now";
     // Decision Node 1: Before the last frost date
