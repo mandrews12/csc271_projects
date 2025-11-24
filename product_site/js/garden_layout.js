@@ -5,14 +5,23 @@
  * Use our interactive garden layout tool to plan and visualize your garden space. Drag and drop plants to see how they fit together, and get suggestions for optimal placement.
  */
 
+/**
+ * @brief GardenLayout constructor that initializes layout properties and generates the layout.
+ * 
+ * @param layoutName - name of the garden layout
+ * @param height - height of the garden layout
+ * @param width - width of the garden layout
+ */
 function GardenLayout(layoutName, height, width) {
-    // store plant lists on the instance to avoid globals
+
+    // properties of the garden layout
     this.plants = ["tomato", "carrot", "lettuce", "pepper", "cucumber", "squash", "eggplant", "zucchini", "basil", "mint", "rosemary", "thyme"];
     this.plantEmojis = ["🍅", "🥕", "🥬", "🌶️", "🥒", "🎃", "🍆", "🥒", "🌿", "🌱", "🌿", "🌱"];
     this.layoutName = layoutName;
     this.height = height;
     this.width = width;
 
+    // method to display the garden layout as a table
     this.displayLayout = function(id) {
         const tableId = id + '-table';
         let table = '<table id="' + tableId + '" class="garden-layout-table" border="1">';
@@ -27,11 +36,13 @@ function GardenLayout(layoutName, height, width) {
         document.getElementById(id).innerHTML = table;
     }
 
+    // method to get the emoji for a given plant name
     this.getPlantEmoji = function(plantName) {
         const index = this.plants.indexOf(plantName);
         return this.plantEmojis[index];
     }
 
+    // method to fill the garden layout with plant emojis
     this.fillGardenWithPlant = function(gardenLayoutID) {
         const container = document.getElementById(gardenLayoutID);
 
@@ -61,7 +72,6 @@ generateLayout.addEventListener("click", function() {
     var height = document.getElementById("height").value;
     var width = document.getElementById("width").value;
     var gardenLayout = new GardenLayout(layoutName, height, width);
-    console.log("Garden Layout Created:", gardenLayout);
 
     gardenLayout.displayLayout("garden-layout-container");
     specs.style.display = "none";
@@ -77,6 +87,7 @@ resetButton.addEventListener("click", function() {
     plantDropdown.style.display = "none";
 });
 
+// Get references to example gardens elements
 var getExampleGardensButton = document.getElementById("generateExamples");
 var exampleGardensSection = document.getElementById("example-gardens");
 
@@ -85,10 +96,10 @@ var garden1 = document.getElementById("example-garden-1");
 var garden2 = document.getElementById("example-garden-2");
 var garden3 = document.getElementById("example-garden-3");
 
+// Create and display example gardens
 var exampleGarden1 = new GardenLayout("My First Garden", 1, 12);
 var exampleGarden2 = new GardenLayout("Vegetable Patch", 5, 5);
 var exampleGarden3 = new GardenLayout("Flower Bed", 10, 15);
-
 
 exampleGarden1.displayLayout("garden-example-1");
 exampleGarden2.displayLayout("garden-example-2");
@@ -98,6 +109,7 @@ exampleGarden1.fillGardenWithPlant("garden-example-1");
 exampleGarden2.fillGardenWithPlant("garden-example-2");
 exampleGarden3.fillGardenWithPlant("garden-example-3");
 
+// Show example gardens section on button click
 getExampleGardensButton.addEventListener("click", function() {
     exampleGardensSection.style.display = "block";
 });
