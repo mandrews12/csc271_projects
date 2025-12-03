@@ -129,12 +129,13 @@ footer p {
   gap: 10px;
 }
 
+/* stat item */
 .stat-item {
   background: #4A5D23;
   color: #F5F3E7;
   flex: 1;
   padding: 15px;
-  border: 2px solid #A0916C;
+  margin: 10px;
   border-radius: 10px;
   text-align: center;
 }
@@ -235,6 +236,11 @@ label {
     width: 100%;
     margin-bottom: 15px;
     text-align: center;
+  }
+
+  button {
+    width: 100%;
+    padding: 12px;
   }
   
 }

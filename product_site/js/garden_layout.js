@@ -113,3 +113,34 @@ exampleGarden3.fillGardenWithPlant("garden-example-3");
 getExampleGardensButton.addEventListener("click", function() {
     exampleGardensSection.style.display = "block";
 });
+
+
+// Interactive planting functionality
+var currentPlantEmoji = null;
+var plantSelect = document.getElementById('plant-dropdown');
+var interactiveContainer = document.getElementById('garden-layout-container');
+
+if (plantSelect) {
+    plantSelect.addEventListener('change', function() {
+        var selected = plantSelect.value;
+        var idx = exampleGarden1.plants.indexOf(selected);
+        if (idx) {
+            currentPlantEmoji = exampleGarden1.plantEmojis[idx];
+        } else {
+            currentPlantEmoji = null;
+        }
+    });
+} 
+
+interactiveContainer.addEventListener('click', function(event) {
+    var target = event.target;
+    if (!target) return;
+    if (target.nodeName === 'TD') {
+        if (currentPlantEmoji) {
+            target.innerHTML = currentPlantEmoji;
+        } 
+    }
+});
+
+
+
